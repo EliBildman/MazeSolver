@@ -24,7 +24,6 @@ $(TARGET): $(OBJS)
 	$(CC) -c $^ $(INC_FLAG)
 
 $(SRC_DIR)/%.o: $(SRC_DIR)/%.cpp $(INC_DIR)/%.hpp
-	echo $(INC_FLAG)
 	$(CC) -c $^ $(INC_FLAG) 
 
 .PHONY: clean
