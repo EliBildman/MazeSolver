@@ -17,7 +17,7 @@ A maze that looks like:
 0   0   0   1
 0   1   0   1
 ```
-
+Would be inputed like this:
 
 ```
 ./build/MazeSolver [algorithm] 0 1 0 1 0 0 0 1 1 1 0 1 0 0 0 0
