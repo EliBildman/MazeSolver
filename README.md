@@ -1,7 +1,7 @@
-#Maze Solver
+# Maze Solver
 This is a (soon to be) collection of maze solving algorithms based off my cs classes and also my own research. For an interactive example of all the algorithms in action, check out my implementation at [link to esbildman](http://esbildman.com/projects/maze).
 
-###Input
+### Input
 
 To use the solver from the command line the syntax is as follows:
 ```
@@ -23,7 +23,7 @@ A maze that looks like:
 ./build/MazeSolver [algorithm] 0 1 0 1 0 0 0 1 1 1 0 1 0 0 0 0
 ```
 
-###Output
+### Output
 
 The Solver outputs a series of coordinates in the format
 ```
