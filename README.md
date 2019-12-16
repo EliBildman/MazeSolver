@@ -1,5 +1,5 @@
 # Maze Solver
-This is a (soon to be) collection of maze solving algorithms based off my cs classes and also my own research. For an interactive example of all the algorithms in action, check out my implementation at [link to esbildman](http://esbildman.com/projects/maze).
+This is a (soon to be) collection of maze solving algorithms based off my cs classes and also my own research. For an interactive example of all the algorithms in action, check out my [implementation](http://esbildman.com/projects/maze).
 
 ### Input
 
