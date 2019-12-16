@@ -21,9 +21,26 @@ bool * convert(int len, const char ** bitmap) {
 
 int main(int argc, const char * argv[]) {
     
-    MazeMap *x = new MazeMap(convert(argc - 1, argv + 1), argc - 1);
+    if(argc < 2) {
+        std::cout << "Usage: MazeSolver [algorithm] [maze]" << std::endl;
+        return 1;
+    }
 
-    struct Solution solution = depthFirstSearch(x);
+    MazeMap *x = new MazeMap(convert(argc - 2, argv + 2), argc - 2);
+
+    Solution solution;
+    
+    if(strcmp(argv[1], "DFS") == 0) {
+        solution = depthFirstSearch(x);
+    } else {
+        std::cout << "Usage: MazeSolver [algorithm] [maze]" << std::endl << "Available algorithms: Deapth First Search (DFS)" << std::endl;
+        return 1;
+    }
+
+    if(solNeg(solution)) {
+        std::cout << "No Solution" << std::endl;
+        return 1;
+    }
 
     printSol(solution);
     
